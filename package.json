@@ -1,0 +1,37 @@
+{
+  "name": "mx.edu.utmj.ti.awos.bienes-raices",
+  "version": "1.0.0",
+  "description": "proyecti de Clase para la unidad 2, de la asignatura AWOS utilizando Node.js",
+  "main": "index.js",
+  "scripts": {
+   "saluda": "node index.js", 
+   "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoTecorralco/BienesReices_230374.git"
+  },
+  "keywords": [
+    "MVC",
+    "Express",
+    "Sequelize",
+    "MySQL",
+    "Tailwind",
+    "Nodemon",
+    "NodeJS",
+    "Mailtrap",
+    "JWT"
+  ],
+  "author": "Diego Salvador Tecorralco Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoTecorralco/BienesReices_230374/issues"
+  },
+  "homepage": "https://github.com/DiegoTecorralco/BienesReices_230374#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
