@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "proyecti de Clase para la unidad 2, de la asignatura AWOS utilizando Node.js",
   "main": "index.js",
+  "type": "module",
+  
   "scripts": {
-   "saluda": "node index.js", 
-   "server": "nodemon index.js"
+    "saluda": "node index.js",
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",

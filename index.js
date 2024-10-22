@@ -1,5 +1,8 @@
-const express =  require(`express`);
+import express from 'express';
 
+//const express =  require(`express`);//importar la libreria para crear para crear un nuevo servidor web
+
+//Ibstanciar nuestra aplicacion web
 const app= express()
 
 //configuramos nuestro servidor web
