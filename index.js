@@ -1,8 +1,8 @@
 //ECMA script 9
 //Common JS
 import express from 'express';
-import generalRoutes from './routes/generalRoutes.js'
-import userRoutes from '.routes/userRoutes.js'
+import generalRoutes from './routes/generalRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 
 //const express =  require(`express`);//importar la libreria para crear para crear un nuevo servidor web
 //Ibstanciar nuestra aplicacion web
@@ -30,4 +30,4 @@ app.get("/", function(req,res){
 
 
 app.use('/', generalRoutes)
-app.use('/usuarios', userRoutes)
+app.use('/usuario', userRoutes)

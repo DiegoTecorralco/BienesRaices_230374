@@ -14,3 +14,5 @@ router.get("/QuienSoy", function(req,res){
         "asignatura": "Aplicaciones Web Orientadas a Servicios(AWOS)"
     });
 })
+
+export default router;
