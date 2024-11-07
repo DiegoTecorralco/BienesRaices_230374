@@ -12,6 +12,10 @@ const formularioRegister=(request,response)=>{
     })
 };
 
+const registrar =(req,res)=>{
+
+}
+
 const formularioPasswordRecovery = (request,response)=>{
     response.render('auth/passwordRecovery',{
         page: "Recuperación de Contraseña"
