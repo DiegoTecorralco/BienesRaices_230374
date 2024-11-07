@@ -1,13 +1,13 @@
 {
-  "name": "mx.edu.utmj.ti.awos.bienes-raices",
+  "name": "mx.edu.utxj.ti.awos.bienes-raices",
   "version": "1.0.0",
-  "description": "proyecti de Clase para la unidad 2, de la asignatura AWOS utilizando Node.js",
+  "description": "Proyecto de Clase para la Unidad 2, de la asignatura AWOS utilizando Node.js",
   "main": "index.js",
   "type": "module",
-  
   "scripts": {
-    "saluda": "node index.js",
-    "server": "nodemon index.js"
+    "saluda": "node saluda.js",
+    "server": "nodemon index.js",
+    "css": "postcss public/css/tailwind.css -o public/css/app.css --watch"
   },
   "repository": {
     "type": "git",
@@ -31,9 +31,14 @@
   },
   "homepage": "https://github.com/DiegoTecorralco/BienesReices_230374#readme",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "pug": "^3.0.3"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "autoprefixer": "^10.4.20",
+    "nodemon": "^3.1.7",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.14"
   }
 }
