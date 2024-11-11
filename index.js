@@ -4,6 +4,8 @@
 import express from 'express';
 import generalRoutes from './routes/generalRoutes.js'
 import userRoutes from './routes/userRoutes.js'
+//import db from './config/db.js'
+
 //const express = require('express'); //DECLARANDO UN OBJETO QUE VA A PERMITIR LEER PAGINAS ETC.importar la libreria para crear un servidor web
 
 //INSTANCIAR NUESTRA APLICACIÓN WEB
@@ -12,6 +14,19 @@ const app = express();
 
 //Definir la carpeta pública de recursos estáticos (assets)
 app.use(express.static('./public'));
+
+//Conexion a la BD
+try {
+  await db.authenticate();
+  console.log("Conexion exitosa a la base de datos.")
+}
+catch(error){
+  console.log(error)
+}
+
+//Habilitar la lectura de datos desde formularios
+app.use(express.urlencoded({encoded:true}))
+
 
 //CONFIGURAMOS NUESTRO SERVIDOR WEB (puerto donde estara escuchando nuestro sitio web)
 const port = 3000;
