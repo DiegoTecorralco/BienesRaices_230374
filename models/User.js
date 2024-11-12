@@ -1,6 +1,5 @@
 import{DataTypes} from 'sequelize'
 import db from '../config/db.js' 
-//import { Token } from 'graphql'
 
 const User = db.define('usuarios',{
     nombre:{

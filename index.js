@@ -1,10 +1,10 @@
 //ECMA Sript 6
 // commin JS
-
+const router = express.Router();
 import express from 'express';
 import generalRoutes from './routes/generalRoutes.js'
 import userRoutes from './routes/userRoutes.js'
-//import db from './config/db.js'
+import db from './db/config.js'
 
 //const express = require('express'); //DECLARANDO UN OBJETO QUE VA A PERMITIR LEER PAGINAS ETC.importar la libreria para crear un servidor web
 
