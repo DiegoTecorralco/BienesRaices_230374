@@ -1,7 +1,8 @@
 import{DataTypes} from 'sequelize'
 import db from '../config/db.js' 
+import { Hooks } from 'sequelize/lib/hooks';
 
-const User = db.define('usuarios',{
+const User = db.define('tb_users',{
     nombre:{
         type: DataTypes.STRING,
         allowNull: false
@@ -15,10 +16,16 @@ const User = db.define('usuarios',{
         type: DataTypes.STRING,
         allowNull: false
     },
-    Token: { 
-        type: DataTypes.STRING,
-        comfirmado: DataTypes.BOOLEAN
-    }
-})
-
+        token: DataTypes.STRING,
+        comfirmed: DataTypes.BOOLEAN
+    },{
+        hooks:{
+            beforeCreate: async function(user)
+            {
+                //Generamos la clave para el hasheo,
+                const salt = await bcrypt.genSalt(10)
+                user.password = await bcrypt.hash(user.password, salt);
+            }
+        }
+    })
 export default User;
