@@ -1,18 +1,21 @@
-# BienesRaices_230374
-Proyecto de Clase para la Unidad 2 de la Asignatura de Aplicaciones Web Orientadas a Servicios (AWOS), a través de una Aplicación Web con Arquitectura SOA para el caso de estudio de una empresa de Bienes Raíces (Compra - Venta de Bienes Inmuebles).
+# BienesRaices_230499
+Proyecto de Clase para la Unidad 2 de la Asignatura de Aplicaciones Web Orientadas a Servicios (AWOS), a través de una aplicación web en Arquitectura SOA para el caso de estudio de una empresa de Bienes Raíces (Compra - Venta de Bienes Inmuebles).
+
+
 ## Descripción
+Para poder demostrar y aprender la creación y consumo de interfaces de Programación de Aplicación (API), con el uso de Aplicaciones Web, en este proyecto se realizará un sistema CRUD en el contexto de las operaciones comunes para una empresa de bienes raíces, mediante la compra, venta y renta de propiedades, utilizando las reglas de negocio apropiadas para la gestión, identificación y control de usuarios.
 
-Para poder demostrar y aprender la creación y consumo de Interfaces de Programación de Aplicaciónes web (API), con el uso de aplicaciones Web, en este proyecto se realizará un sistema CRUD en el contecto de las operaciones comunes para una empresa de Bienes Raíces, mediante la compra, vent y renta de propiedades, utilizando las reglas de negocio apropiadas para la gestion, identidicación y control de usuarios 
+## Historial de prácticas
+|No.|Fecha|Descripción|Potenciador|Estatus|
+|---|---|---|---|---|
+|8.|17/10/2024|Nuevo Repositorio del proyecto implementado .gitignore|1|Finalizada|
+|9.|22/10/2024|Creación de una Aplicación Web usando Express|12|⭐Finalizada|
+|10.|24/10/2024|Operaciones Básicas de una API a traves de los verbos HTTP|12|⭐ Finalizada|
+|11.|05/11/2024|Creación de fromularios para el ingreso, Registro y Recuperación de contraseñas de usuario |13|⭐ Finalizada|
+|12.|23/11/2024|Integración de funcionalidad de creacion de cuentas de usuario|30|⭐ Finalizada|
 
-## Hitorial de Practicas
-|NO.|Fecha|Deswcripción|Potenciador|Estatus|
-|--|--|--|--|--|
-|8.|17/10/2024|Nuevo Repositorio del Proyecto implementado .gitignore|1|✅finalizada|
-|9.|22/10/2024|Creacion de una Aplicacón web usando Express|12|✅finalizada|
-|10.|24/10/2024|Operaciones básica de una API a través de los vervos HTTP|12|✅finalizada|
-|11.|24/10/2024|Creacion de formularios para el ingreso, registro y recuperacion de Contraseñan de los Usuarios|12|✅finalizada|
-## autor 
-**Diego salvador tecorralco martinez** / [@DiegoTecorralco](https://github.com/DiegoTecorralco)
-Unidad 2 
-Aplicaciones Web Orientadas a Servicios
+## Autor
+**Diego Salvador Tecorralco Martínez** / [@DiegoTecorralco](https://github.com/DiegoTecorralco)<br>
+Unidad 2 <br>
+Aplicaciones Web Orientadas a Servicios<br>
 Octubre 2024

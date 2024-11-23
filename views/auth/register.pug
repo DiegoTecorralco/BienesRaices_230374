@@ -2,25 +2,52 @@ extends ../layout/index
 
 block contenido
     div.py-10
-        h1.text-center.font-extrabold.my-10.text-4xl.text-indigo-600 Bienes 
+        h1.text-center.font-extrabold.my-10.text-4xl.text-green Bienes 
             span.font-normal.text-black Raíces
-        h2.text-center.font-extrabold.text-2xl=page
+        h2.text-center.font-extrabold.text-2xl= page
+
+        if errors
+            div(class="max-w-md mx-auto my-10")
+                each error in errors
+                    div(class="bg-red text-white p-4 rounded-md flex items-center justify-between mb-2")
+                        // Los iconos ahora están correctamente configurados
+                        if error.msg == "El nombre no puede ir vacío"
+                            i(class="fas fa-user-times mr-2")  
+                        else if error.msg == "El correo electrónico es un campo obligatorio"
+                            i(class="fas fa-envelope-open-text mr-2")  
+                        else if error.msg == "El correo electrónico no tiene el formato correcto"
+                            i(class="fas fa-exclamation-triangle mr-2")
+                        else if error.msg == "La contraseña es un campo obligatorio"
+                            i(class="fas fa-key mr-2")  
+                        else if error.msg == "El Password debe ser de al menos 8 caracteres"
+                            i(class="fas fa-lock mr-2") 
+                        p(class="text-sm font-bold")= error.msg
+                        button(class="ml-2 bg-transparent border-0 text-white" onclick="this.parentElement.style.display='none'") &times;
+
         .mt-8.mx-auto.max-w-md
             .bg-white.py-8.px-4.shadow
-                form(action="").space-y-5.px-6
+                form(method="POST" action="/auth/newUser" ).space-y-5.px-6
+                    input(type="hidden" name="_csrf" value= csrfToken)
                     div
-                        label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold Nombre Completo: 
-                        input#nombre.w-full.px-3.py-2.border-2.border-gray-300.rounded-md(type="text" placeholder="Ej. Juanito Peréz" name="names")
+                        label.block.text-sm.uppercase.text-black.mb-2.font-bold Nombre Completo: 
+                        input#name.w-full.px-3.py-2.border-2.border-black.rounded-md(type="text" placeholder="Ej. Juanito Peréz" name="name")
                     div
                         label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold Email de Registro: 
-                        input#email.w-full.px-3.py-2.border-2.border-gray-300.rounded-md(type="email" placeholder="Ej. usuario@paisdelasmaravillas.com" name="correo-usuario")
+                        input#email.w-full.px-3.py-2.border-2.border-black.rounded-md(type="email" placeholder="Ej. usuario@paisdelasmaravillas.com" name="correo_usuario")
                     div
-                        label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold Contraseña: 
-                        input#password.w-full.px-3.py-2.border-2.border-gray-300.rounded-md(type="password" placeholder="Minimo de 8 caracteres" name="pass-usuario")
+                        label.block.text-sm.uppercase.text-black.mb-2.font-bold Contraseña: 
+                        input#password.w-full.px-3.py-2.border-2.border-black.rounded-md(type="password" placeholder="Minimo de 8 caracteres" name="pass_usuario")
                     div
-                        label.block.text-sm.uppercase.text-gray-500.mb-2.font-bold Confirmar Contraseña: 
-                        input#password2.w-full.px-3.py-2.border-2.border-gray-300.rounded-md(type="password" placeholder="Minimo de 8 caracteres" name="pass2-usuario")
+                        label.block.text-sm.uppercase.text-black.mb-2.font-bold Confirmar Contraseña: 
+                        input#password2.w-full.px-3.py-2.border-2.border-black.rounded-md(type="password" placeholder="Minimo de 8 caracteres" name="pass2_usuario")
                     div.flex.items-center.justify-between
-                        a.text-gray-500.text-xs(href="/auth/login" class="hover:underline decoration-2 hover:decoration-red-600") ¿Ya tienes cuenta? Inicia Sesión
-                        a.text-gray-500.text-xs(href="/auth/passwordRecovery" class="hover:underline decoration-2 hover:decoration-red-600") Recuperar Contraseña
-                    input(class="w-full bg-indigo-600 hover:bg-red-700 text-white font-bold py-3 cursor-pointer" type="submit" value="Crear Cuenta")
+                        a.text-gray-500.text-xs(href="/auth/login" class="hover:underline decoration-2 hover:decoration-blackgreen") ¿Ya tienes cuenta? Inicia Sesión
+                        a.text-gray-500.text-xs(href="/auth/passwordRecovery" class="hover:underline decoration-2 hover:decoration-blackgreen") Recuperar Contraseña
+                    input(class="w-full bg-whitegreen hover:bg-blackgreen text-black font-bold py-3 cursor-pointer" type="submit" value="Crear Cuenta")
+
+    script.
+        document.querySelectorAll('.bg-red').forEach(error => {
+            setTimeout(() => {
+                error.style.display = 'none';
+            }, 7000); 
+        });

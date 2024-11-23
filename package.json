@@ -11,28 +11,38 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DiegoTecorralco/BienesReices_230374.git"
+    "url": "git+https://github.com/DiegoTecorralco.git"
   },
   "keywords": [
     "MVC",
     "Express",
-    "Sequelize",
-    "MySQL",
+    "Sequielize",
+    "MyAQL",
     "Tailwind",
     "Nodemon",
     "NodeJS",
     "Mailtrap",
     "JWT"
   ],
-  "author": "Diego Salvador Tecorralco Martinez",
+  "author": "Diego Salvador Tecorralco Martínez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DiegoTecorralco/BienesReices_230374/issues"
+    "url": "https://github.com/DiegoTecorralco/BienesRaices-230499/issues"
   },
-  "homepage": "https://github.com/DiegoTecorralco/BienesReices_230374#readme",
+  "homepage": "https://github.com/DiegoTecorralco/BienesRaices-230499#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "csurf": "^1.10.0",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "pug": "^3.0.3"
+    "express-validator": "^7.2.0",
+    "mysql2": "^3.11.4",
+    "nodemailer": "^6.9.16",
+    "pug": "^3.0.3",
+    "sequelize": "^6.37.5",
+    "sweetalert2": "^11.14.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
