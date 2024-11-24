@@ -6,7 +6,7 @@ router.get("/",function(req, res){
     res.send("Hola mundo desde Node, a través del navegador")
 });
 router.get("/QuienSoy",function(req, res){
-    res.json({"Estudiante": "Angel de Jesus Rufino Mendoza",
+    res.json({"Estudiante": "Diegp Salvador Tecorralco Martínez",
         "grado":"4°",
         "grupo":"B",
         "asignatura":"Aplicaciones de Software Orientado a Servicios (AWOS)"});
