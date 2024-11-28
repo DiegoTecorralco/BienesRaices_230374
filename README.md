@@ -8,11 +8,12 @@ Para poder demostrar y aprender la creación y consumo de interfaces de Programa
 ## Historial de prácticas
 |No.|Fecha|Descripción|Potenciador|Estatus|
 |---|---|---|---|---|
-|8.|17/10/2024|Nuevo Repositorio del proyecto implementado .gitignore|1|Finalizada|
-|9.|22/10/2024|Creación de una Aplicación Web usando Express|12|⭐Finalizada|
-|10.|24/10/2024|Operaciones Básicas de una API a traves de los verbos HTTP|12|⭐ Finalizada|
-|11.|05/11/2024|Creación de fromularios para el ingreso, Registro y Recuperación de contraseñas de usuario |13|⭐ Finalizada|
-|12.|23/11/2024|Integración de funcionalidad de creacion de cuentas de usuario|30|⭐ Finalizada|
+|8.|17/10/2024|Nuevo Repositorio del proyecto implementado .gitignore|1|✅Finalizada|
+|9.|22/10/2024|Creación de una Aplicación Web usando Express|12|✅Finalizada|
+|10.|24/10/2024|Operaciones Básicas de una API a traves de los verbos HTTP|12|✅Finalizada|
+|11.|05/11/2024|Creación de fromularios para el ingreso, Registro y Recuperación de contraseñas de usuario |13|✅Finalizada|
+|12.|20/11/2024|Integración de Funcionalidad de Creacion de Cuentas de Usuario|30|✅Finalizada|
+|13.|28/11/2024|Integración de Recuperación de Contraseñas|Pendiente|⭐Activa|
 
 ## Autor
 **Diego Salvador Tecorralco Martínez** / [@DiegoTecorralco](https://github.com/DiegoTecorralco)<br>
