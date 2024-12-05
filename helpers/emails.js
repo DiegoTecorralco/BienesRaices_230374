@@ -113,4 +113,3 @@ const passwordRecoveryEmail = async (data) => {
 }
 
 export { registerEmail, passwordRecoveryEmail };
-
