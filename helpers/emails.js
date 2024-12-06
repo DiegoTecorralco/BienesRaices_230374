@@ -2,11 +2,11 @@ import nodemailer from 'nodemailer';
 
 const registerEmail = async (data) => {
     const transport = nodemailer.createTransport({
-        host: process.env.Email_HOST,
-        port: process.env.Email_PORT,
+        host: process.env.EMAIL_HOST,
+        port: process.env.EMAIL_PORT,
         auth: {
-            user: process.env.Email_USER,
-            pass: process.env.Email_PASS,
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS,
         },
     });
 

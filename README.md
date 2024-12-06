@@ -13,7 +13,7 @@ Para poder demostrar y aprender la creación y consumo de interfaces de Programa
 |10.|24/10/2024|Operaciones Básicas de una API a traves de los verbos HTTP|12|✅Finalizada|
 |11.|05/11/2024|Creación de fromularios para el ingreso, Registro y Recuperación de contraseñas de usuario |13|✅Finalizada|
 |12.|20/11/2024|Integración de Funcionalidad de Creacion de Cuentas de Usuario|30|✅Finalizada|
-|13.|28/11/2024|Integración de Recuperación de Contraseñas|Pendiente|⭐Activa|
+|13.|28/11/2024|Integración de Recuperación de Contraseñas|20|✅Finalizada|
 
 ## Autor
 **Diego Salvador Tecorralco Martínez** / [@DiegoTecorralco](https://github.com/DiegoTecorralco)<br>
