@@ -2,11 +2,11 @@ import nodemailer from 'nodemailer';
 
 const registerEmail = async (data) => {
     const transport = nodemailer.createTransport({
-        host: process.env.Email_HOST,
-        port: process.env.Email_PORT,
+        host: process.env.EMAIL_HOST,
+        port: process.env.EMAIL_PORT,
         auth: {
-            user: process.env.Email_USER,
-            pass: process.env.Email_PASS,
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS,
         },
     });
 
@@ -86,7 +86,7 @@ const passwordRecoveryEmail = async (data) => {
                         Hemos recibido una solicitud para restablecer la contraseña de tu cuenta en <strong>BienesRaices_230374</strong>.
                     </p>
                     <div style="text-align: center; margin: 20px 0;">
-                        <a href="${process.env.BACKEND_URL}:${process.env.PORT ?? 3000}/auth/reset-password/${token}" 
+                        <a href="${process.env.BACKEND_URL}:${process.env.PORT ?? 3000}/auth/passwordRecovery/${token}" 
                            style="background-color: #3498DB; color: white; text-decoration: none; padding: 12px 25px; border-radius: 8px; font-size: 18px;">
                            Restablecer Contraseña
                         </a>
@@ -113,4 +113,3 @@ const passwordRecoveryEmail = async (data) => {
 }
 
 export { registerEmail, passwordRecoveryEmail };
-
