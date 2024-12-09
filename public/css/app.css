@@ -610,23 +610,7 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-.bg-celadon {
-  --tw-bg-opacity: 1;
-  background-color: rgb(168 230 161 / var(--tw-bg-opacity));
-}
-.bg-celadon-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(193 255 196 / var(--tw-bg-opacity));
-}
-.bg-emerald {
-  --tw-bg-opacity: 1;
-  background-color: rgb(80 200 120 / var(--tw-bg-opacity));
-}
-.bg-pigmentgreen {
-  --tw-bg-opacity: 1;
-  background-color: rgb(76 175 80 / var(--tw-bg-opacity));
-}
-.bg-redd {
+.bg-red {
   --tw-bg-opacity: 1;
   background-color: rgb(214 40 40 / var(--tw-bg-opacity));
 }
@@ -637,9 +621,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-cgr {
+.bg-whitegreen {
   --tw-bg-opacity: 1;
-  background-color: rgb(241 251 250 / var(--tw-bg-opacity));
+  background-color: rgb(141 255 205 / var(--tw-bg-opacity));
 }
 .p-4 {
   padding: 1rem;
@@ -723,17 +707,13 @@ video {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.text-emerald {
+.text-blackgreen {
   --tw-text-opacity: 1;
-  color: rgb(80 200 120 / var(--tw-text-opacity));
+  color: rgb(79 157 105 / var(--tw-text-opacity));
 }
-.text-emerald-400 {
+.text-green {
   --tw-text-opacity: 1;
-  color: rgb(63 155 80 / var(--tw-text-opacity));
-}
-.text-pigmentgreen {
-  --tw-text-opacity: 1;
-  color: rgb(76 175 80 / var(--tw-text-opacity));
+  color: rgb(104 216 155 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -764,13 +744,13 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.hover\:bg-celadon:hover {
+.hover\:bg-blackgreen:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(168 230 161 / var(--tw-bg-opacity));
+  background-color: rgb(79 157 105 / var(--tw-bg-opacity));
 }
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
-.hover\:decoration-pigmentgreen:hover {
-  text-decoration-color: #4CAF50;
+.hover\:decoration-green:hover {
+  text-decoration-color: #68D89B;
 }
