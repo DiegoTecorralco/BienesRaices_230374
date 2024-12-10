@@ -1,5 +1,5 @@
 import express from 'express';
-import { formularioLogin,formularioRegister,formularioPasswordRecovery,createNewUser,confirm, resetPassword,checkToken,newPassword} from '../controllers/userController.js';
+import { formularioLogin,formularioRegister,formularioPasswordRecovery,createNewUser,confirm, resetPassword,checkToken,newPassword,authenticate} from '../controllers/userController.js';
 
 const router =  express.Router();
 
@@ -40,15 +40,18 @@ router.delete("/deleteUser/:email", function(request,response){
     response.send(`Se ha solicitado la eliminación del usuario asociado al correo: ${request.params.email}`)
 })
 
-router.get("/login",formularioLogin/*Middelware*/)
-router.get("/createAccount",formularioRegister)
-router.post("/createAccount",formularioRegister)
-router.get("/passwordRecovery",formularioPasswordRecovery)
-router.post("/passwordRecovery", resetPassword)
-router.get('/confirm/:token',confirm )
+// Rutas de autenticación
+router.get("/login", formularioLogin);
+router.post("/login", authenticate);
 
-//Almacena el nuevo password
-router.get('/passwordRecovery/:token', checkToken)
-router.post('/passwordRecovery/:token', newPassword)
+router.get("/createAccount", formularioRegister);
+router.post("/createAccount", createNewUser);
+
+router.get("/passwordRecovery", formularioPasswordRecovery);
+router.post("/passwordRecovery", resetPassword);
+
+router.get('/confirm/:token', confirm);
+router.get('/passwordRecovery/:token', checkToken);
+router.post('/passwordRecovery/:token', newPassword);
 
 export default router;
