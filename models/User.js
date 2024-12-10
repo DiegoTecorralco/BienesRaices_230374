@@ -4,16 +4,20 @@ import bcrypt from 'bcrypt'
 const User=db.define('tbb_users',{
     name:{
         type:DataTypes.STRING,
-        allownull:false
+        allowNull:false
     },
     email:{
         type:DataTypes.STRING,
-        allownull:false,
+        allowNull:false,
         unique:true
     },
     password:{
         type:DataTypes.STRING,
-        allownull:false
+        allowNull:false
+    },
+    fecha_nacimiento    : {
+        type: DataTypes.DATE, 
+        allowNull: true
     },
     token:DataTypes.STRING,
     confirmed:DataTypes.BOOLEAN
@@ -26,5 +30,9 @@ const User=db.define('tbb_users',{
         }
     }
 })
-
+//Metodos Personalizados 
+User.prototype.verificarPassword = function(password){
+    return bcrypt.compareSync(password, this.password);
+    
+}
 export default User;
